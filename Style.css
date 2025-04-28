@@ -1,0 +1,450 @@
+/* Apply basic styling to all elements */
+*{
+    font-family: "Roboto", sans-serif; /* Set font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure elements' total width includes padding and border */
+    list-style: none; /* Remove list-style from lists */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* General styling for the body */
+.body{
+    background-color: rgb(0, 0, 0); /* Set background color to black */
+    padding: 0 7vw; /* Add horizontal padding */
+    user-select: none; /* Disable text selection */
+}
+
+/* Styling for anchor tags */
+a{
+    color: white; /* Set link color to white */
+}
+
+/* Styling for header */
+header{
+    height: 70px; /* Set header height */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out header items */
+    align-items: center; /* Vertically center the items */
+}
+
+/* Styling for header logo */
+header div:nth-child(1) img{
+    width: 150px; /* Set logo width */
+    padding-bottom: 35px; /* Add bottom padding */
+}
+
+/* Styling for header navigation lists */
+header div:nth-child(2) ul, header div:nth-child(3) ul{
+    display: flex; /* Use flexbox for layout */
+    font-weight: bold; /* Make text bold */
+    color: white; /* Set text color to white */
+}
+
+/* Styling for list items in header */
+header div:nth-child(2) ul li, header div:nth-child(3) ul li{
+    margin: 0 5px; /* Add horizontal margin */
+    padding: 5px 20px; /* Add padding */
+    border: 1.5px solid transparent; /* Set border to transparent */
+    border-radius: 20px; /* Round the corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: all 0.3s; /* Add smooth transition */
+}
+
+/* Special styling for first and last list items */
+header div:nth-child(2) ul li:first-child, header div:nth-child(3) ul li:last-child{
+    border: 1.5px solid white; /* Set white border for first and last items */
+}
+
+/* Hover effect for list items */
+header div:nth-child(2) ul li:hover, header div:nth-child(3) ul li:hover{
+    border: 1.5px solid white; /* Change border color on hover */
+}
+
+/* Styling for videos */
+video{
+    width: 800px; /* Set video width */
+    margin: 5px; /* Add margin around video */
+}
+
+/* Styling for audio text */
+.audiotext{
+    text-align: center; /* Center text */
+    color: white; /* Set text color to white */
+    font-size: 1.5rem; /* Set font size */
+    margin: 20px; /* Add margin */
+}
+
+/* Change the color of the first letter of the audio text */
+.audiotext::first-letter{
+    color: green; /* Set the first letter to green */
+}
+
+/* Styling for image in figures */
+.figimage{
+    width: 600px; /* Set image width */
+    display: block; /* Ensure image is block-level */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+}
+
+/* Styling for figure captions */
+.figtext{
+    background:#111; /* Set background to dark */
+    color:#fff; /* Set text color to white */
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc; /* Add text shadow */
+    font-size:48px; /* Set large font size */
+    text-align: center; /* Center text */
+    color: white; /* Set text color */
+    font-size: 1.3rem; /* Set font size */
+    margin: 20px; /* Add margin */
+}
+
+/* Styling for details section */
+.detext{
+    text-align: center; /* Center text */
+    color: white; /* Set text color to white */
+    font-size: 1.5rem; /* Set font size */
+    margin: 20px; /* Add margin */
+}
+
+/* Styling for hover effect on summary */
+summary:hover{
+    color: brown; /* Change color on hover */
+}
+
+/* Styling for summary text */
+.sumtext{
+    font-size: 0.9rem; /* Set font size */
+}
+
+/* Styling for the first section */
+.sec1{
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Styling for the first child div inside sec1 */
+.sec1 div:nth-child(1){
+    width: 350px; /* Set width */
+    color: white; /* Set text color to white */
+}
+
+/* Styling for h1 inside sec1 */
+.sec1 div:nth-child(1) h1{
+    font-size: 5em; /* Set large font size */
+}
+
+/* Styling for h3 inside sec1 */
+.sec1 div:nth-child(1) h3{
+    font-size: 1.8rem; /* Set font size */
+    text-align: left; /* Align text to the left */
+    font-weight: 700; /* Set bold font weight */
+    margin-bottom: 15px; /* Add margin at the bottom */
+}
+
+/* Styling for image inside sec1 */
+.sec1 div:nth-child(2) img{
+    width: 400px; /* Set image width */
+}
+
+/* Styling for buttons */
+.btn-1{
+    margin: 0 5px; /* Add horizontal margin */
+    padding: 5px 20px; /* Add padding */
+    border: 1.5px solid white; /* Add border */
+    border-radius: 20px; /* Round corners */
+    background-color: transparent; /* Set background to transparent */
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: all 0.2s; /* Add smooth transition */
+}
+
+/* Hover effect for buttons */
+.btn-1:hover{
+    background-color: white; /* Change background color */
+    color: darkblue; /* Change text color */
+}
+
+/* Styling for line elements */
+.line{
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Styling for individual line divs */
+.line div{
+    background-color: white; /* Set background to white */
+    width: 50px; /* Set width */
+    height: 3px; /* Set height */
+    border-radius: 100px; /* Round the corners */
+    margin: 0 50px; /* Add margin */
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Special styling for the second line div */
+.line div:nth-child(2){
+    background-color: blanchedalmond; /* Set background color */
+    width: 70px; /* Set width */
+}
+
+/* Styling for sec2 section */
+.sec2{
+    margin: 80px 0; /* Add margin */
+    color: white; /* Set text color to white */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+/* Styling for h1 inside sec2 */
+.sec2 h1{
+    font-size: 2.5rem; /* Set font size */
+    text-align: center; /* Center text */
+}
+
+/* Styling for sec2 container */
+.sec2 .container{
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Set width to 100% */
+    padding: 20px 10px; /* Add padding */
+}
+
+/* Styling for individual divs inside sec2 container */
+.sec2 .container div{
+    cursor: pointer; /* Set cursor to pointer */
+    margin-top: 30px; /* Add margin at the top */
+    background-color: rgb(0, 0, 0); /* Set background to black */
+    border: 1px solid white; /* Add white border */
+    border-radius: 5px; /* Round corners */
+    height: 320px; /* Set height */
+    width: 270px; /* Set width */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items horizontally */
+    transition: transform 0.3s; /* Add smooth scale transition */
+}
+
+/* Hover effect for sec2 container divs */
+.sec2 .container div:hover{
+    transform: scale(1.04); /* Scale up the div on hover */
+}
+
+/* Styling for images inside sec2 container divs */
+.sec2 .container div img{
+    width: 100%; /* Set image width */
+    height: 210px; /* Set image height */
+    background-color: brown; /* Set background color */
+    object-fit: cover; /* Ensure image covers the container */
+}
+
+/* Styling for icons inside sec2 container divs */
+.sec2 .container div i{
+    border: 1px solid white; /* Add white border */
+    padding: 5px 7px; /* Add padding */
+    border-radius: 50%; /* Make the icon circular */
+    font-size: 30px; /* Set font size */
+    margin-bottom: 15px; /* Add margin at the bottom */
+    transition: all 0.2s; /* Add smooth transition */
+}
+
+/* Hover effect for icons */
+.sec2 .container div i:hover{
+    background-color: white; /* Change background color */
+    color: firebrick; /* Change icon color */
+}
+
+/* Styling for sec3 section */
+.sec3{
+    color: white; /* Set text color to white */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 80px; /* Add margin at the bottom */
+}
+
+/* Styling for images inside sec3 */
+.sec3 div:nth-child(1) img{
+   width: 500px; /* Set image width */
+}
+
+/* Styling for the second div inside sec3 */
+.sec3 div:nth-child(2){
+    max-width: 600px; /* Set maximum width */
+    border: 1px solid white; /* Add white border */
+    border-radius: 8px; /* Round corners */
+    padding: 35px; /* Add padding */
+}
+
+/* Styling for paragraphs inside sec3 */
+.sec3 div:nth-child(2) p{
+    font-size: 12px; /* Set font size */
+    line-height: 25px; /* Set line height */
+    padding: 20px 0; /* Add vertical padding */
+    text-align: justify; /* Justify text */
+}
+
+/* Styling for sec4 section */
+.sec4{
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Set text color to white */
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 80px; /* Add margin at the bottom */
+}
+
+/* Styling for sec4div container */
+.sec4div{
+    width: 70%; /* Set width */
+    padding: 10px 0; /* Add padding */
+}
+
+/* Styling for questions container */
+.qns{
+    width: 100%; /* Set width to 100% */
+    border: 1px solid white; /* Add white border */
+    background-color: rgb(255, 255, 255); /* Set background to white */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items */
+    border-radius: 5px; /* Round corners */
+    margin-top: 10px; /* Add margin at the top */
+}
+
+/* Styling for question text */
+.qns div:nth-child(1){
+    padding: 10px 20px; /* Add padding */
+}
+
+/* Styling for question headings */
+.qns div h4{
+    line-height: 30px; /* Set line height */
+    font-size: 0.8rem; /* Set font size */
+    color: black; /* Set text color to black */
+}
+
+/* Styling for question answers */
+.qns div p{
+    line-height: 17px; /* Set line height */
+    font-size: o,7rem; /* Set font size */
+}
+
+/* Styling for add button inside questions */
+.qns .add{
+    background-color: orange; /* Set background color */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    display: flex; /* Use flexbox for layout */
+    padding: 0 20px; /* Add padding */
+    font-size: 1.3rem; /* Set font size */
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Styling for plus and minus icons */
+.fa-minus{
+    padding-right: 20px; /* Add padding to the right */
+}
+
+/* Hide elements with class .none */
+.add .none{
+    background-color: transparent; /* Set background to transparent */
+    height: 50px; /* Set height */
+}
+
+/* Hide elements with class .hide */
+.hide{
+    display: none; /* Hide element */
+}
+
+/* Styling for show class */
+.show{
+    display: block; /* Display the element */
+}
+
+/* Styling for sec5 section */
+
+.sec5{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 50px;
+    color: white;
+    margin-bottom: 150px;
+}
+
+.sec5 .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.sec5 h3{
+    font-size: 1.1rem;
+    padding: 10px 0;
+    padding-bottom: 5px;
+}
+
+.sec5 p, .sec5 pre{
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+
+}
+
+.sec5 .container div:nth-child(2){
+    margin-left: 0px;
+    width: 69%;
+}
+
+.sec5 .form{
+    padding: 0 20px;
+}
+
+.sec5 input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 10px;
+    line-height: 20px;
+    color: white;
+
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.error {
+    color: red;
+    font-size: 0.7rem;
+    margin-top: 2px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    padding-bottom: 60px;
+}
+
+footer p{
+   text-align: center;
+}
